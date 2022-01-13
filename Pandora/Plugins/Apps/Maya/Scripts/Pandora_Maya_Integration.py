@@ -367,6 +367,7 @@ class Pandora_Maya_Integration(object):
                     os.path.join(userFolders["Documents"], "maya", "2018"),
                     os.path.join(userFolders["Documents"], "maya", "2019"),
                     os.path.join(userFolders["Documents"], "maya", "2020"),
+                    os.path.join(userFolders["Documents"], "maya", "2022"),
                 ]
             elif platform.system() == "Linux":
                 userName = (
@@ -380,6 +381,7 @@ class Pandora_Maya_Integration(object):
                     os.path.join("/home", userName, "maya", "2018"),
                     os.path.join("/home", userName, "maya", "2019"),
                     os.path.join("/home", userName, "maya", "2020"),
+                    os.path.join("/home", userName, "maya", "2022"),
                 ]
             elif platform.system() == "Darwin":
                 userName = (
@@ -393,6 +395,7 @@ class Pandora_Maya_Integration(object):
                     "/Users/%s/Library/Preferences/Autodesk/maya/2018" % userName,
                     "/Users/%s/Library/Preferences/Autodesk/maya/2019" % userName,
                     "/Users/%s/Library/Preferences/Autodesk/maya/2020" % userName,
+                    "/Users/%s/Library/Preferences/Autodesk/maya/2022" % userName,
                 ]
 
             mayaItem = QTreeWidgetItem(["Maya"])
